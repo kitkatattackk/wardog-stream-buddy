@@ -86,7 +86,7 @@
   },
   "showRanks": {
     "type": "checkbox",
-    "label": "Show Wardogs Rank Tags (Commander / Sergeant / Specialist / Enlisted)",
+    "label": "Show Twitch Role Tags (Streamer / Moderator / VIP / Subscriber)",
     "value": true,
     "group": "Chat"
   },
@@ -144,6 +144,18 @@
     "value": true,
     "group": "Dispatches"
   },
+  "demoMode": {
+    "type": "checkbox",
+    "label": "Chat Demo Mode (sample chat + alerts)",
+    "value": false,
+    "group": "Demo & Testing"
+  },
+  "soundEnabled": {
+    "type": "checkbox",
+    "label": "Enable Built-In Alert Sounds",
+    "value": true,
+    "group": "Sounds"
+  },
   "alertVolume": {
     "type": "slider",
     "label": "Alert Volume",
@@ -155,19 +167,49 @@
   },
   "subSound": {
     "type": "sound-input",
-    "label": "Sub / Gift / Tip Sound",
+    "label": "Custom New Sub Sound (optional)",
+    "value": "",
+    "group": "Sounds"
+  },
+  "resubSound": {
+    "type": "sound-input",
+    "label": "Custom Resub Sound (optional)",
+    "value": "",
+    "group": "Sounds"
+  },
+  "giftSound": {
+    "type": "sound-input",
+    "label": "Custom Gifted Subs Sound (optional)",
     "value": "",
     "group": "Sounds"
   },
   "bitsSound": {
     "type": "sound-input",
-    "label": "Bits Sound",
+    "label": "Custom Bits Sound (optional)",
     "value": "",
     "group": "Sounds"
   },
   "raidSound": {
     "type": "sound-input",
-    "label": "Raid Sound",
+    "label": "Custom Raid Siren (optional)",
+    "value": "",
+    "group": "Sounds"
+  },
+  "followSound": {
+    "type": "sound-input",
+    "label": "Custom Follow Sound (optional)",
+    "value": "",
+    "group": "Sounds"
+  },
+  "tipSound": {
+    "type": "sound-input",
+    "label": "Custom Tip Sound (optional)",
+    "value": "",
+    "group": "Sounds"
+  },
+  "firstSound": {
+    "type": "sound-input",
+    "label": "Custom First Chat Sound (optional)",
     "value": "",
     "group": "Sounds"
   }
