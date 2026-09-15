@@ -1,0 +1,174 @@
+{
+  "accentColor": {
+    "type": "colorpicker",
+    "label": "Accent / Stencil Color",
+    "value": "#b58b2a",
+    "group": "Look & Feel"
+  },
+  "panelColor": {
+    "type": "colorpicker",
+    "label": "Crate Panel Color",
+    "value": "rgba(20,23,14,0.82)",
+    "group": "Look & Feel"
+  },
+  "textColor": {
+    "type": "colorpicker",
+    "label": "Message Text Color",
+    "value": "#e8e4d4",
+    "group": "Look & Feel"
+  },
+  "fontSize": {
+    "type": "slider",
+    "label": "Font Size (px)",
+    "value": 22,
+    "min": 12,
+    "max": 60,
+    "step": 1,
+    "group": "Look & Feel"
+  },
+  "animationSpeed": {
+    "type": "slider",
+    "label": "Animation Speed (ms)",
+    "value": 320,
+    "min": 80,
+    "max": 1200,
+    "step": 20,
+    "group": "Look & Feel"
+  },
+  "chatDirection": {
+    "type": "dropdown",
+    "label": "Stack Direction",
+    "value": "bottom",
+    "options": { "bottom": "Newest at bottom", "top": "Newest at top" },
+    "group": "Look & Feel"
+  },
+  "maxMessages": {
+    "type": "number",
+    "label": "Max Messages On Screen",
+    "value": 25,
+    "group": "Chat"
+  },
+  "messageLifetime": {
+    "type": "number",
+    "label": "Message Lifetime (seconds, 0 = never fade)",
+    "value": 0,
+    "group": "Chat"
+  },
+  "hideBots": {
+    "type": "checkbox",
+    "label": "Hide Bot Messages",
+    "value": true,
+    "group": "Chat"
+  },
+  "botList": {
+    "type": "text",
+    "label": "Bot Names (comma separated)",
+    "value": "nightbot,streamelements,streamlabs,moobot,fossabot,soundalerts",
+    "group": "Chat"
+  },
+  "hideCommands": {
+    "type": "checkbox",
+    "label": "Hide ! Commands",
+    "value": true,
+    "group": "Chat"
+  },
+  "showBadges": {
+    "type": "checkbox",
+    "label": "Show Twitch Badges",
+    "value": true,
+    "group": "Chat"
+  },
+  "showAvatars": {
+    "type": "checkbox",
+    "label": "Show Avatars",
+    "value": true,
+    "group": "Chat"
+  },
+  "showRanks": {
+    "type": "checkbox",
+    "label": "Show Wardogs Rank Tags (Commander / Sergeant / Specialist / Enlisted)",
+    "value": true,
+    "group": "Chat"
+  },
+  "showSubs": {
+    "type": "checkbox",
+    "label": "New Recruit (sub)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showResubs": {
+    "type": "checkbox",
+    "label": "Re-Enlisted (resub)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showGiftSubs": {
+    "type": "checkbox",
+    "label": "Supply Drop (gifted subs)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showBits": {
+    "type": "checkbox",
+    "label": "Fire Mission (bits)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "minBits": {
+    "type": "number",
+    "label": "Minimum Bits To Show",
+    "value": 1,
+    "group": "Dispatches"
+  },
+  "showRaids": {
+    "type": "checkbox",
+    "label": "Incoming Convoy (raids & hosts)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showFollows": {
+    "type": "checkbox",
+    "label": "Signed Up (follows)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showFirstChat": {
+    "type": "checkbox",
+    "label": "First Contact (first-time chatter)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "showTips": {
+    "type": "checkbox",
+    "label": "War Chest (tips)",
+    "value": true,
+    "group": "Dispatches"
+  },
+  "alertVolume": {
+    "type": "slider",
+    "label": "Alert Volume",
+    "value": 60,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Sounds"
+  },
+  "subSound": {
+    "type": "sound-input",
+    "label": "Sub / Gift / Tip Sound",
+    "value": "",
+    "group": "Sounds"
+  },
+  "bitsSound": {
+    "type": "sound-input",
+    "label": "Bits Sound",
+    "value": "",
+    "group": "Sounds"
+  },
+  "raidSound": {
+    "type": "sound-input",
+    "label": "Raid Sound",
+    "value": "",
+    "group": "Sounds"
+  }
+}
