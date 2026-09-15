@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# WarDog Stream Buddy
+
+I want to build a new chatbot design for streamers. 
+
+I want them to be able to install it directly into stream elements where they can customize it from there. I will be selling it via Etsy
+
+I want it themed after Wardogs. It should include special messages for Subs, gifted subs, bits, etc etc.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4361b7b8-cf00-4a60-bd6a-08b127824f33).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
