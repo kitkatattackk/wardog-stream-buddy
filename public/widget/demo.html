@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wardogs Chat Preview</title>
+<link rel="stylesheet" href="/widget/wardogs-chat.css" />
+<style>
+  html, body { height: 100%; }
+  body {
+    background:
+      radial-gradient(circle at 30% 20%, rgba(90,100,60,.35), transparent 60%),
+      repeating-linear-gradient(115deg, #1b1e14 0 22px, #191c12 22px 44px);
+  }
+</style>
+</head>
+<body>
+<div id="wardogs-chat"></div>
+<script src="/widget/wardogs-chat.js"></script>
+<script>
+  var CHATTERS = [
+    { displayName: 'SIERRA_K9', displayColor: '#c9a227', text: 'boots on the ground, lets move', badges: [{ type: 'moderator', url: '' }] },
+    { displayName: 'ghost_recon88', displayColor: '#8f9a3c', text: 'that flank was clean', badges: [{ type: 'subscriber', url: '' }] },
+    { displayName: 'DELTA_MIKE', displayColor: '#d4762a', text: 'reloading, cover me', badges: [] },
+    { displayName: 'K9Handler', displayColor: '#a33724', text: 'good dog. GOOD DOG.', badges: [{ type: 'vip', url: '' }] },
+    { displayName: 'TRENCHRAT', displayColor: '#7d9aa3', text: 'no scope no problem', badges: [] },
+    { displayName: 'Warhound_Actual', displayColor: '#b58b2a', text: 'copy that, holding position', badges: [{ type: 'broadcaster', url: '' }] }
+  ];
+
+  WARDOGS.init({
+    showAvatars: false,
+    messageLifetime: 0,
+    maxMessages: 14
+  }, document.getElementById('wardogs-chat'));
+
+  var i = 0;
+  function chatter() {
+    var c = CHATTERS[i++ % CHATTERS.length];
+    WARDOGS.renderMessage(c);
+  }
+  chatter(); chatter(); chatter();
+  setInterval(chatter, 3200);
+
+  window.addEventListener('message', function (e) {
+    var d = e.data || {};
+    if (d.wd !== 'fire') return;
+    if (d.kind === 'chat') return chatter();
+    if (d.kind === 'firstchat') return WARDOGS.firstChat('NEWBLOOD_07');
+    WARDOGS.event(d.kind, d.payload || {});
+  });
+</script>
+</body>
+</html>
