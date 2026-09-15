@@ -103,6 +103,7 @@
     if (!cfg.showBadges || !data.badges) return '';
     var out = '';
     for (var i = 0; i < data.badges.length; i++) {
+      if (!data.badges[i] || !data.badges[i].url) continue;
       out += '<img class="wd-badge" src="' + esc(data.badges[i].url) + '" alt="">';
     }
     return out;
